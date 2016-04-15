@@ -52,7 +52,7 @@ class AboutMethods < Neo::Koan
 
   def test_calling_with_default_values
     assert_equal [1, :default_value], method_with_defaults(1)
-    assert_equal [1, __], method_with_defaults(1, 2)
+    assert_equal [1, 2], method_with_defaults(1, 2)
   end
 
   # ------------------------------------------------------------------
